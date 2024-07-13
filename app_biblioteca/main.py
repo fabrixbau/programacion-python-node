@@ -61,13 +61,17 @@ def modificar_libro():
     nuevo_valor = ''
     respuesta = ''
     campo = input(
-        'Seleccione el campo que desea modificar\n1. Título\n2. Autor\n3. Estado\n')
+        'Seleccione el campo que desea modificar\n'
+        '1. Título\n'
+        '2. Autor\n'
+        '3. Estado\n'
+    )
     if campo == '1':
-        nuevo_valor = input('Ingrese el nuevo título del libro')
+        nuevo_valor = input('Ingrese el nuevo título del libro: ')
     elif campo == '2':
-        nuevo_valor = input('Ingrese el nuevo autor del libro')
+        nuevo_valor = input('Ingrese el nuevo autor del libro: ')
     elif campo == '3':
-        nuevo_valor = input('Ingrese el nuevo estado del libro')
+        nuevo_valor = input('Ingrese el nuevo estado del libro: ')
     respuesta = modificar(id, campo, nuevo_valor)
     print(respuesta)
 
