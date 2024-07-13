@@ -50,7 +50,7 @@ def modificar(id, nombre, apellidos, empresa, telefono, email, direccion):
     try:
         con = conectar()
         cursor = con.cursor()
-        sentencia_sql = ''' UPDATE contacto SET nombre=?, apellidos=?, 
+        sentencia_sql = ''' UPDATE contacto SET nombre=?, apellidos=?,
         empresa=?, telefono=?, email=?, direccion=? WHERE id=? '''
         datos = (nombre, apellidos, empresa, telefono, email, direccion, id)
         cursor.execute(sentencia_sql, datos)
